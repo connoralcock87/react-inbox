@@ -1,6 +1,4 @@
-const Data = () => {
-  return (
-  [
+const Data = [
     {
       "id": 1,
       "subject": "You can't input the protocol without calculating the mobile RSS protocol!",
@@ -59,8 +57,6 @@ const Data = () => {
       "starred": true,
       "labels": []
     }
-  ]
-  );
-};
+  ];
 
 export default Data

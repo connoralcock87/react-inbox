@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Messages from './components/Messages.js';
+import MessageList from './components/MessageList.js';
 import Toolbar from './components/Toolbar.js';
+import Data from './components/Data.js';
 
 class App extends Component {
+  state = {messages: Data}
   render() {
     return (
       <div className="App">
         <Toolbar />
-        <Messages />
+        <MessageList messages={this.state.messages}/>
       </div>
     );
   }
