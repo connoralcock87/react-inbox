@@ -1,11 +1,11 @@
 import React from 'react';
 import Message from './Message.js';
 
-const MessageList = ({messages}) => {
+const MessageList = ({messages, star, selecting}) => {
   return (
     <div>
       {messages.map(message => {
-        return <Message message={message} key={message.id}/>
+        return <Message message={message} key={message.id} star={star} selecting={selecting}/>
       })}
     </div>
   )
